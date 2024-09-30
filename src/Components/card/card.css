@@ -1,0 +1,33 @@
+.Card {
+  width: 22vw;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  justify-content: center;
+}
+
+.Card img {
+  width: 100%;
+}
+.disPara {
+  height: 150px;
+}
+.Card h4,
+.Card p {
+  padding: 10px;
+}
+.Card span {
+  background-color: #8b0002;
+  color: #fff;
+  border-radius: 30px;
+  padding: 5px;
+  width: 60%;
+}

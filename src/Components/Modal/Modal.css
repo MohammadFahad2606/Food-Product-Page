@@ -1,0 +1,50 @@
+.ModalShow {
+  position: fixed;
+  top: 0;
+  z-index: 0;
+  color: blanchedalmond;
+  background-color: #c4a5a527;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ModalShow h1{
+  color: #000;
+  padding: 100px;
+  background-color:#ffffff;
+}
+.mymodal {
+  width: 80%;
+  height: 80%;
+ border-radius: 20px;
+  display: flex;
+  position: relative;
+  color: #000;
+  overflow: hidden;
+  background-color:#ffffff;
+}
+.leftbox{
+  width: 45%;
+  padding: 10px;
+}
+.leftbox img{
+  width: 100%;
+}
+
+.rightbox{
+display: flex;
+flex-direction: column;
+  padding: 10px;
+}
+.ModalcloseBtn{
+  height: 30px;
+  width: 30px;
+  background-color: #193b1d;
+  border-radius: 50px;
+  position: absolute;
+  right: 0 ;
+  margin: 10px;
+
+}
