@@ -3,7 +3,7 @@
   top: 0;
   z-index: 0;
   color: blanchedalmond;
-  background-color: #c4a5a527;
+  background-color: #727272ab;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -16,7 +16,7 @@
   background-color:#ffffff;
 }
 .mymodal {
-  width: 80%;
+  width: 50%;
   height: 80%;
  border-radius: 20px;
   display: flex;
@@ -34,6 +34,7 @@
 }
 
 .rightbox{
+  border-left: 1px solid gainsboro;
 display: flex;
 flex-direction: column;
   padding: 10px;

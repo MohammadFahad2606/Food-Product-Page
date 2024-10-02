@@ -1,25 +1,18 @@
 import Card from "./Components/card/Card";
 import Header from "./Components/Header/Header";
-import Modal from "./Components/Modal/Modal";
-import { data } from "./Utils/constant/data";
-import { useState } from "react";
 
+import { Fooddata } from "./Utils/constant/data";
 
 function App() {
   return (
     <>
       <Header />
-      
-      <div  className="cardWrapper">
-      {
-        data.map((item)=>{
-          return(
-            <Card  key={item.id} data= {item}  />
-          )
-        })
-      }
+
+      <div className="cardWrapper">
+        {Fooddata.map((item) => {
+          return <Card key={item.id} data={item} />;
+        })}
       </div>
-      
     </>
   );
 }
