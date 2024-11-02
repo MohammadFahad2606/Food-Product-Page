@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   z-index: 0;
-  color: blanchedalmond;
+  color: var(--bg);
   background-color: #727272ab;
   height: 100vh;
   width: 100%;
@@ -10,42 +10,72 @@
   align-items: center;
   justify-content: center;
 }
-.ModalShow h1{
-  color: #000;
+.ModalShow h1 {
+  /* color: #000; */
   padding: 100px;
-  background-color:#ffffff;
+  background-color: var(--bg);
 }
 .mymodal {
   width: 50%;
   height: 80%;
- border-radius: 20px;
+  border-radius: 20px;
   display: flex;
   position: relative;
   color: #000;
   overflow: hidden;
-  background-color:#ffffff;
+  background-color: var(--bg);
+  overflow: auto;
 }
-.leftbox{
+.leftbox {
   width: 45%;
   padding: 10px;
 }
-.leftbox img{
+.leftbox img {
   width: 100%;
+  max-height: 100%;
+  border-radius: 15px;
+  object-fit: contain;
 }
 
-.rightbox{
+.rightbox {
   border-left: 1px solid gainsboro;
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   padding: 10px;
 }
-.ModalcloseBtn{
+.rightbox h5 {
+  color: var(--btn);
+  border-radius: 10px;
+  display: flex;
+}
+.ModalcloseBtn {
   height: 30px;
   width: 30px;
-  background-color: #193b1d;
+  background-color: var(--btn);
   border-radius: 50px;
   position: absolute;
-  right: 0 ;
+  right: 0;
   margin: 10px;
-
+}
+.imgrow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.modal-imges {
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  transition: 0.5s ease;
+}
+.modal-imges img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.modal-imges:hover {
+  filter: grayscale(1);
 }

@@ -4,7 +4,7 @@ import Button from "../button/Button";
 import Modal from "../Modal/Modal";
 import { Fooddata } from "../../Utils/constant/data";
 const Card = (data) => {
-  const { tittle, Price, disription, img, id } = data.data;
+  const { tittle, Price, disription, images, id, category } = data.data;
   const [modal, setmodal] = useState(false);
 
   const mymodal = () => {
@@ -17,13 +17,14 @@ const Card = (data) => {
     <>
       {modal && <Modal modalData={filterdata} setmodal={setmodal} />}
       <div onClick={mymodal} className="Card">
-        <img src={img} alt="" />
+        <img src={images[0].img} alt="" />
         <h4>{tittle}</h4>
-        {/* <h4>{key}</h4> */}
-        <div className="disPara">
-          <p>{disription}</p>
-          {/* <p>{id}</p> */}
-        </div>
+        <span>{category} </span>
+        {disription && (
+          <div className="disPara">
+            <p>{disription}</p>
+          </div>
+        )}
         <span>Rs. {Price}</span>
         <Button text="Add to Cart" />
       </div>
